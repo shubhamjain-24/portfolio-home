@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    object-fit: cover;
+}
+#top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.988); */
+    pointer-events: none;
+}
+#workingarea{
+    margin:0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    position: relative;
+}
+#nav{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 40px;
+}
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nleft a {
+    pointer-events: all;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size:12px;
+}
+#button2{
+    background-color: white;
+    width: fit-content;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    pointer-events: all;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    transform: translate(  0%,-50%);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#heroLeft{
+    min-width: 50%;
+}
+#heroLeft .elem{
+    height: 5vw;
+    overflow: hidden;
+    position: relative;
+}
+#heroLeft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroLeft .elem h1{
+    top: 100%;
+    left: 0;
+    position: absolute;
+    font-family: 'Righteous', sans-serif;
+    letter-spacing: -2px;
+    color: white;
+    font-weight: 100;
+    font-size: 5vw;
+}
+#heroLeft button{
+    padding: 0.8vw 2.5vw;
+    font-size: 2vw;
+    font-family: 'Righteous', sans-serif;
+    margin-top: 2vw;
+    pointer-events: all;
+    cursor: pointer;
+}
+#heroRight{
+    width: 17%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#heroRight p{
+    text-align: right;
+    font-size: 13px;
+    font-weight: 300;
+}
+#imageDiv{
+    width: 100%;
+    height: 170px;
+    background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fHww);
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+#heroRight p:nth-child(3){
+    margin-bottom: 70px;
+}
